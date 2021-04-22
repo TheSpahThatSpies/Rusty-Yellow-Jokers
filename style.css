@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 :root{
     --loadcolour: #009091;
+    --textcolor: #FEB228;
 }
 
 .load-body{
@@ -7,6 +10,62 @@
 }
 
 .img-joker{
+    position: absolute;
     margin-top: 65%;
     width: 100%;
+    z-index: -10;
+}
+
+.load-h1{
+    color: var(--textcolor);
+    font-family: 'Shrikhand', 'cursive';
+    text-align: center;
+    position: absolute;
+    margin-top: 120%;
+    margin-left: 30%;
+}
+
+#joker-hands{
+    opacity: 0;
+    animation-name:            show; 
+    animation-duration:        0s;
+    animation-delay: 5.97s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+  
+.img-joker {
+    animation-name:            rotate; 
+    animation-duration:        1s;
+    animation-iteration-count: 6;
+    animation-timing-function: linear;
+}
+
+/* Animations */
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to { 
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes hide {
+    from {
+      opacity: 100;
+    }
+    to { 
+      opacity: 0;
+    }
+}
+
+@keyframes show {
+    from {
+      opacity: 0;
+    }
+    to { 
+      opacity: 100;
+    }
 }
