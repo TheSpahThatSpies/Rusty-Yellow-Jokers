@@ -1,0 +1,12 @@
+:root{
+    --loadcolour: #009091;
+}
+
+.load-body{
+    background-color: var(--loadcolour);
+}
+
+.img-joker{
+    margin-top: 65%;
+    width: 100%;
+}
