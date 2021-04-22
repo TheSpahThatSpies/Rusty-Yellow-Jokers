@@ -52,15 +52,6 @@
     }
 }
 
-@keyframes hide {
-    from {
-      opacity: 100;
-    }
-    to { 
-      opacity: 0;
-    }
-}
-
 @keyframes show {
     from {
       opacity: 0;
