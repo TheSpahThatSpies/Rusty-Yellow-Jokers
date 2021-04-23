@@ -1,3 +1,3 @@
-var timer = setTimeout(function() {
-    window.location='http://example.com'
-}, 8000);
+//var timer = setTimeout(function() {
+//    window.location='http://example.com'
+//}, 8000);
