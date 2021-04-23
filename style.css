@@ -13,7 +13,6 @@
     position: absolute;
     margin-top: 65%;
     width: 100%;
-    z-index: -10;
 }
 
 .load-h1{
@@ -42,6 +41,12 @@
     animation-timing-function: linear;
 }
 
+.img-flood{
+    position: absolute;
+    margin-top: 500px;
+    width: 500px;
+}
+
 /* Animations */
 @keyframes rotate {
     from {
@@ -58,5 +63,18 @@
     }
     to { 
       opacity: 100;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .img-joker{
+        margin-top: 7%;
+        margin-left: 15%;
+        width: 70%;
+    }
+    .load-h1{
+        margin-top: 45%;
+        margin-left: 41%;
+        font-size: 60px;
     }
 }
