@@ -22,8 +22,11 @@ html {
 }
 
 .logo__img {
+    display: block;
+    position: absolute;
     max-width: 20%;
     height: auto;
+    
 }
 
 .card__video--container {
@@ -99,8 +102,11 @@ html {
 .card__infocontainer {
     display: flex;
     flex-direction: column;
-    align-self: center;
     margin: 40px;
+    justify-content: space-between;
+    justify-content: center;
+    width: 70%;
+    
 }
 
 .card__info {
@@ -166,21 +172,20 @@ html {
         padding: 0px;
     }
 
-.card__info {
+    .card__info {
     max-width: 100%;
     height: auto;
+    }
 
-}
-
-.card__icon--title {
+    .card__icon--title {
     font-family: var(--htext);
     font-size: 16px;
     margin-left: 20px;
     margin-bottom: -20px;
-}
+    }
 
-.card__icontext{
+    .card__icontext{
     font-size: 18px;
     margin-left:40px
-}
+    }
 }
