@@ -41,6 +41,22 @@
     animation-timing-function: linear;
 }
 
+
+.img-droplet{
+    display: none;
+    width: 100%;
+    position: absolute;
+    margin-top: 850px;
+    z-index: 20;
+
+    animation-name:            flood; 
+    animation-duration:        0.4s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
 /* Animations */
 @keyframes rotate {
     from {
@@ -60,6 +76,26 @@
     }
 }
 
+@keyframes flood{
+    from{
+        margin-top: 850px; 
+    }
+
+    to{
+        margin-top: -350px;
+    }
+}
+
+@keyframes flood-mobil{
+    from{
+        margin-top: 850px; 
+    }
+
+    to{
+        margin-top: -400px;
+    }
+}
+
 @media screen and (min-width: 600px) {
     .img-joker{
         margin-top: 7%;
@@ -73,27 +109,9 @@
     }
 }
 
-.img-droplet{
-    display: none;
-    width: 100%;
-    position: absolute;
-    margin-top: 850px;
-    z-index: 20;
-
-    animation-name:            flood; 
-    animation-duration:        0.4s;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-}
- beepW
-@keyframes flood{
-    from{
-        margin-top: 850px; 
-    }
-
-    to{
-        margin-top: -350px;
+@media screen and (max-width: 600px) {
+    .img-droplet{
+        height: 150%;
+        animation-name:            flood-mobil; 
     }
 }
